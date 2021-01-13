@@ -1,7 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hprudhom <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/01/13 14:03:50 by hprudhom          #+#    #+#             */
+/*   Updated: 2021/01/13 14:04:29 by hprudhom         ###   ########lyon.fr   */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 
-# define BUFFER_SIZE 8
+// # define BUFFER_SIZE 8
 
 # include <stdlib.h>
 # include <stdio.h>
@@ -21,7 +33,5 @@ char	*ft_strcpy(char *dst, const char *src);
 void	ft_memdel(void **ap);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 
-int     get_next_line(int fd, char **line);
-
-
+int		get_next_line(int fd, char **line);
 #endif
