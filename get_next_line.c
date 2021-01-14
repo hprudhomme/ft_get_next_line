@@ -30,14 +30,14 @@ static int		ft_breakline(char **src, char **line)
 		*src = tmp;
 		if ((*src)[0] == '\0')
 		{	
-			// printf("je suis la\n");
+			printf("je suis la\n");
 			ft_strdel(src);
 			return (0);
 		}
 	}
 	else
 	{	
-		// printf("je suis ici\n");
+		printf("je suis ici\n");
 		*line = ft_strdup(*src);
 		ft_strdel(src);
 		return (0);
@@ -97,44 +97,44 @@ int				get_next_line(int fd, char **line)
 	return (ft_verif(src, line, ret, fd));
 }
 
-// int   main(int ac, char **av)
-// {
-// 	(void)ac;
-// 	char  *line;
-// 	int   fd1;
-// 	//   int   fd2;
-// 	//   int   fd3;
+int   main(int ac, char **av)
+{
+	(void)ac;
+	char  *line;
+	int   fd1;
+	//   int   fd2;
+	//   int   fd3;
 
-// 	int x = 0;
+	int x = 0;
 
-// 	fd1 = open(av[1], O_RDONLY);
-// 	//   fd2 = open(av[2], O_RDONLY);
-// 	//   fd3 = open(av[3], O_RDONLY);
+	fd1 = open(av[1], O_RDONLY);
+	//   fd2 = open(av[2], O_RDONLY);
+	//   fd3 = open(av[3], O_RDONLY);
 
-// 	while (x < 4)
-// 	{
-// 		printf("%d\n", get_next_line(fd1, &line));
-// 		printf(" l = %s\n", line);
+	while (x < 6)
+	{
+		printf("%d\n", get_next_line(fd1, &line));
+		printf(" l = %s\n", line);
 
-// 		printf("------------------------ ligne %d\n", x + 1);
-// 		x++;
-// 	}
+		printf("------------------------ ligne %d\n", x + 1);
+		x++;
+	}
 
-// 	//   printf("%d\n", get_next_line(fd1, &line));
-// 	//   printf("%s\n", line);
+	//   printf("%d\n", get_next_line(fd1, &line));
+	//   printf("%s\n", line);
 
-// 	//   printf("---------------------------------------------------------------------------------------------------------------------------------\n");
+	//   printf("---------------------------------------------------------------------------------------------------------------------------------\n");
 
-// 	//   printf("%d\n", get_next_line(fd1, &line));
-// 	//   printf("%s\n", line);
+	//   printf("%d\n", get_next_line(fd1, &line));
+	//   printf("%s\n", line);
 
-// 	//   printf("---------------------------------------------------------------------------------------------------------------------------------\n");
+	//   printf("---------------------------------------------------------------------------------------------------------------------------------\n");
 
-// 	//   printf("%d\n", get_next_line(fd1, &line));
-// 	//   printf("%s\n", line);
+	//   printf("%d\n", get_next_line(fd1, &line));
+	//   printf("%s\n", line);
 
-// 	//   printf("---------------------------------------------------------------------------------------------------------------------------------\n");
+	//   printf("---------------------------------------------------------------------------------------------------------------------------------\n");
 
-// 	//   printf("%d\n", get_next_line(fd1, &line));
-// 	//   printf("%s\n", line);
-// }
+	//   printf("%d\n", get_next_line(fd1, &line));
+	//   printf("%s\n", line);
+}
