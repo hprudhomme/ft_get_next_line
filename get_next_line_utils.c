@@ -34,6 +34,17 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 
+char	*ft_strcpy(char *dst, const char *src)
+{
+	size_t i;
+
+	i = ft_strlen(src);
+	while (*src != '\0')
+		*dst++ = *src++;
+	*dst = '\0';
+	return (dst - i);
+}
+
 char	*ft_strnew(size_t size)
 {
 	char	*str;
@@ -110,17 +121,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (dst);
 }
 
-char	*ft_strcpy(char *dst, const char *src)
-{
-	size_t i;
-
-	i = ft_strlen(src);
-	while (*src != '\0')
-		*dst++ = *src++;
-	*dst = '\0';
-	return (dst - i);
-}
-
 char	*ft_strchr(const char *s, int c)
 {
 	while (*s)
@@ -137,7 +137,7 @@ char	*ft_strchr(const char *s, int c)
 void	ft_memdel(void **ap)
 {
 	if (ap != NULL)
-	{
+	{	
 		free(*ap);
 		*ap = NULL;
 	}
