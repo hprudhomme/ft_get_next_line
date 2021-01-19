@@ -6,7 +6,7 @@
 /*   By: hprudhom <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/13 13:59:41 by hprudhom          #+#    #+#             */
-/*   Updated: 2021/01/13 14:03:25 by hprudhom         ###   ########lyon.fr   */
+/*   Updated: 2021/01/15 13:56:12 by hprudhom         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -137,7 +137,7 @@ char	*ft_strchr(const char *s, int c)
 void	ft_memdel(void **ap)
 {
 	if (ap != NULL)
-	{	
+	{
 		free(*ap);
 		*ap = NULL;
 	}

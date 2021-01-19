@@ -94,13 +94,10 @@ int				get_next_line(int fd, char **line)
 // 	//   fd2 = open(av[2], O_RDONLY);
 // 	//   fd3 = open(av[3], O_RDONLY);
 
-// 	while (x < 6)
+// 	while ((x = get_next_line(fd1, &line)) == 1)
 // 	{
-// 		printf("%d\n", get_next_line(fd1, &line));
+// 		printf("%d\n", x);
 // 		printf(" l = %s\n", line);
-
-// 		printf("------------------------ ligne %d\n", x + 1);
-// 		x++;
 // 	}
 
 // 	//   printf("%d\n", get_next_line(fd1, &line));
